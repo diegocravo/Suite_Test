@@ -14,11 +14,12 @@ public class MovimentoLocacao {
 
     Bicicleta bicicleta = new Bicicleta();
 
-    public void calcularIss(){
+    public float calcularIss(){
         locacao.registraLocacao(10);
         locacao.registraDevolucao(12);
         this.valor = (bicicleta.getValorLocacao() * (locacao.getHoraFinal() - locacao.getHoraInicio()));
         this.valorIss = valor * 0.05f;
+        return this.valorIss;
     }
 
     public float getValorIss() {

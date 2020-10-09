@@ -12,14 +12,16 @@ public class Locacao {
     private int horaFinal;
     private float valorLocacao;
 
-    public void registraLocacao(int horaInicio){
+    public int registraLocacao(int horaInicio){
         Bicicleta bicicleta = new Bicicleta();
         this.data = LocalDate.now();
         this.horaInicio = horaInicio;
+        return  this.horaInicio;
     }
 
-    public void registraDevolucao(int horaFinal){
+    public int registraDevolucao(int horaFinal){
         this.horaFinal = horaFinal;
+        return this.horaFinal;
     }
 
     public int getHoraInicio() {

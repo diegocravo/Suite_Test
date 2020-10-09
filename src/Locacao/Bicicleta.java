@@ -8,12 +8,14 @@ public class Bicicleta {
     private float valorLocacao = 2.00f;
     private boolean disponível;
 
-    public void disponivel(){
+    public boolean disponivel(){
         this.disponível = true;
+        return this.disponível;
     }
 
-    public void indisponível(){
+    public boolean indisponível(){
         this.disponível = false;
+        return this.disponível;
     }
 
     public boolean isDisponível() {
