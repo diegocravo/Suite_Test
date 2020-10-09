@@ -1,6 +1,5 @@
 package Test;
 
-import Locacao.Bicicleta;
 import Locacao.BicicletaTest;
 import Locacao.LocacaoTest;
 import financeiro.MovimentoLocacaoTest;
